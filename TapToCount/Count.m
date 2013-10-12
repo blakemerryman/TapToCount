@@ -20,6 +20,11 @@
     return self;
 }
 
+-(NSUInteger)returnTheCount
+{
+    return _theCount;
+}
+
 -(void)incrementTheCountByOne
 {
     _theCount += 1;
