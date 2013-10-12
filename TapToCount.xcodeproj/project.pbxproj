@@ -21,6 +21,7 @@
 		4656FB8A1809019500A077FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4656FB6C1809019500A077FD /* UIKit.framework */; };
 		4656FB921809019500A077FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4656FB901809019500A077FD /* InfoPlist.strings */; };
 		4656FB941809019500A077FD /* TapToCountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4656FB931809019500A077FD /* TapToCountTests.m */; };
+		4656FB9F180902AC00A077FD /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = 4656FB9E180902AC00A077FD /* Count.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		4656FB8F1809019500A077FD /* TapToCountTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TapToCountTests-Info.plist"; sourceTree = "<group>"; };
 		4656FB911809019500A077FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4656FB931809019500A077FD /* TapToCountTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapToCountTests.m; sourceTree = "<group>"; };
+		4656FB9D180902AC00A077FD /* Count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Count.h; sourceTree = "<group>"; };
+		4656FB9E180902AC00A077FD /* Count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Count.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				4656FB7E1809019500A077FD /* TapToCountViewController.m */,
 				4656FB801809019500A077FD /* Images.xcassets */,
 				4656FB6F1809019500A077FD /* Supporting Files */,
+				4656FB9D180902AC00A077FD /* Count.h */,
+				4656FB9E180902AC00A077FD /* Count.m */,
 			);
 			path = TapToCount;
 			sourceTree = "<group>";
@@ -200,6 +205,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Blake Merryman";
 				TargetAttributes = {
+					4656FB641809019400A077FD = {
+						DevelopmentTeam = X2GDHXTJ3U;
+					};
 					4656FB851809019500A077FD = {
 						TestTargetID = 4656FB641809019400A077FD;
 					};
@@ -253,6 +261,7 @@
 				4656FB751809019500A077FD /* main.m in Sources */,
 				4656FB791809019500A077FD /* TapToCountAppDelegate.m in Sources */,
 				4656FB7F1809019500A077FD /* TapToCountViewController.m in Sources */,
+				4656FB9F180902AC00A077FD /* Count.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TapToCount/TapToCount-Prefix.pch";
 				INFOPLIST_FILE = "TapToCount/TapToCount-Info.plist";
@@ -392,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TapToCount/TapToCount-Prefix.pch";
 				INFOPLIST_FILE = "TapToCount/TapToCount-Info.plist";
