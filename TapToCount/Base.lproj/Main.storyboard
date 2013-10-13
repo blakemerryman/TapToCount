@@ -36,7 +36,6 @@
                                 </state>
                                 <connections>
                                     <action selector="tapToIncrementTheCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HP1-bR-UgX"/>
-                                    <action selector="tapToincrementTheCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gby-Jv-VSO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2g-vz-xUP">
@@ -51,8 +50,6 @@
                                 </state>
                                 <connections>
                                     <action selector="tapToDecrementTheCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cpj-yd-YYI"/>
-                                    <action selector="tapToIncrementTheCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DPU-Od-8g0"/>
-                                    <action selector="tapToincrementTheCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ogO-CT-8R2"/>
                                 </connections>
                             </button>
                         </subviews>

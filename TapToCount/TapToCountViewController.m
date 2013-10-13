@@ -12,6 +12,7 @@
 #pragma mark - Private Interface:
 @interface TapToCountViewController ()
 @property Count* theCount;
+-(void)updateTheCountDisplayed;
 @end
 
 #pragma mark - Public Interface Implementation:
@@ -35,12 +36,21 @@
 - (IBAction)tapToIncrementTheCount:(id)sender
 {
     [_theCount incrementTheCountByOne];
-    _theCountDisplayed.text = [NSString stringWithFormat:@"%lu",(long)[_theCount returnTheCount]];
+    [self updateTheCountDisplayed];
 }
 
 - (IBAction)tapToDecrementTheCount:(id)sender
 {
     [_theCount decrementTheCountByOne];
-    _theCountDisplayed.text = [NSString stringWithFormat:@"%lu",(long)[_theCount returnTheCount]];
+    [self updateTheCountDisplayed];
+
 }
+
+#pragma mark - Private Method Implementations:
+-(void)updateTheCountDisplayed
+{
+    NSUInteger updatedCount = [_theCount returnTheCount];
+    _theCountDisplayed.text = [NSString stringWithFormat:@"%lu",(long)updatedCount];
+}
+
 @end
