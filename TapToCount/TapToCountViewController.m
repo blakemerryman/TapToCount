@@ -38,4 +38,9 @@
     _theCountDisplayed.text = [NSString stringWithFormat:@"%lu",(long)[_theCount returnTheCount]];
 }
 
+- (IBAction)tapToDecrementTheCount:(id)sender
+{
+    [_theCount decrementTheCountByOne];
+    _theCountDisplayed.text = [NSString stringWithFormat:@"%lu",(long)[_theCount returnTheCount]];
+}
 @end

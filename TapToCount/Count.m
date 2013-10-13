@@ -15,7 +15,7 @@
 {
     self = [super init];
     if (self) {
-        _theCount = 0;
+        _theCount = 10;
     }
     return self;
 }

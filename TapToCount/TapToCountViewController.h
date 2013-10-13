@@ -11,4 +11,5 @@
 @interface TapToCountViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *theCountDisplayed;
 - (IBAction)tapToIncrementTheCount:(id)sender;
+- (IBAction)tapToDecrementTheCount:(id)sender;
 @end
