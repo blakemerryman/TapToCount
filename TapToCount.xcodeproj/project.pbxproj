@@ -472,6 +472,7 @@
 				4656FB991809019500A077FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4656FB9A1809019500A077FD /* Build configuration list for PBXNativeTarget "TapToCountTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +481,7 @@
 				4656FB9C1809019500A077FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
