@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TapToCountViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UILabel *theCountDisplayed;
-- (IBAction)tapToIncrementTheCount:(id)sender;
-- (IBAction)tapToDecrementTheCount:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *theCountDisplayed;  // Displays the count.
+- (IBAction)tapToIncrementTheCount:(id)sender;      // Action from button that increases the count.
+- (IBAction)tapToDecrementTheCount:(id)sender;      // Action from button that decreases the count.
 @end

@@ -21,7 +21,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     _theCount = [[Count alloc] init];
     _theCountDisplayed.text = [NSString stringWithFormat:@"%lu",(long)[_theCount returnTheCount]];
 }
@@ -33,12 +32,14 @@
 }
 
 #pragma mark - My Actions:
+/* Action from button that increases the count. */
 - (IBAction)tapToIncrementTheCount:(id)sender
 {
     [_theCount incrementTheCountByOne];
     [self updateTheCountDisplayed];
 }
 
+/* Action from button that decreases the count. */
 - (IBAction)tapToDecrementTheCount:(id)sender
 {
     [_theCount decrementTheCountByOne];
@@ -47,6 +48,7 @@
 }
 
 #pragma mark - Private Method Implementations:
+/* Private method that updates the count & displays the updated value to label. */
 -(void)updateTheCountDisplayed
 {
     NSUInteger updatedCount = [_theCount returnTheCount];
