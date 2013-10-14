@@ -115,15 +115,12 @@
 		4656FB6E1809019500A077FD /* TapToCount */ = {
 			isa = PBXGroup;
 			children = (
-				4656FB771809019500A077FD /* TapToCountAppDelegate.h */,
-				4656FB781809019500A077FD /* TapToCountAppDelegate.m */,
 				4656FB7A1809019500A077FD /* Main.storyboard */,
 				4656FB7D1809019500A077FD /* TapToCountViewController.h */,
 				4656FB7E1809019500A077FD /* TapToCountViewController.m */,
-				4656FB801809019500A077FD /* Images.xcassets */,
-				4656FB6F1809019500A077FD /* Supporting Files */,
 				4656FB9D180902AC00A077FD /* Count.h */,
 				4656FB9E180902AC00A077FD /* Count.m */,
+				4656FB6F1809019500A077FD /* Supporting Files */,
 			);
 			path = TapToCount;
 			sourceTree = "<group>";
@@ -131,6 +128,9 @@
 		4656FB6F1809019500A077FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4656FB771809019500A077FD /* TapToCountAppDelegate.h */,
+				4656FB781809019500A077FD /* TapToCountAppDelegate.m */,
+				4656FB801809019500A077FD /* Images.xcassets */,
 				4656FB701809019500A077FD /* TapToCount-Info.plist */,
 				4656FB711809019500A077FD /* InfoPlist.strings */,
 				4656FB741809019500A077FD /* main.m */,
