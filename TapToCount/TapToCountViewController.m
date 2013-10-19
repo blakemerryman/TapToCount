@@ -40,6 +40,7 @@
         // User has shaken the device. Reset the count to zero.
         [_theCount resetTheCountToZero]; // TODO: Abstract this to be -(void)restCountToValue:(NSUInteger)value for multiple uses.
         [self updateTheCountDisplayed];
+        
     }
 }
 
