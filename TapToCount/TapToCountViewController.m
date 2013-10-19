@@ -31,7 +31,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Motion-Handling Methods
+#pragma mark - Motion Event Methods:
 // Shake to Reset Count
 -(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
@@ -44,7 +44,7 @@
 }
 
 
-#pragma mark - My Actions:
+#pragma mark - My UI Button Actions:
 /* Action from button that increases the count. */
 - (IBAction)tapToIncrementTheCount:(id)sender
 {
