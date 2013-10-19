@@ -12,11 +12,11 @@
 #pragma mark - Private Interface:
 @interface TapToCountViewController ()
 
-    #pragma mark - Private Properties:
-    @property CountItem* TheItem;       // CountItem used privately within this object.
+#pragma mark - Private Properties:
+@property CountItem* TheItem;       // CountItem used privately within this object.
 
-    #pragma mark - Private Interface:
-    -(void)updateTheCountDisplayed;     // Method that updates the display labels.
+#pragma mark - Private Interface:
+-(void)updateTheCountDisplayed;     // Method that updates the display labels.
 
 @end
 
