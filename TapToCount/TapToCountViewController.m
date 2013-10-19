@@ -7,12 +7,17 @@
 //
 
 #import "TapToCountViewController.h"
-#import "Count.h"
+#import "CountItem.h"
 
 #pragma mark - Private Interface:
 @interface TapToCountViewController ()
-@property Count* theCount;
--(void)updateTheCountDisplayed;
+
+    #pragma mark - Private Properties:
+    @property CountItem* TheItem;       // CountItem used privately within this object.
+
+    #pragma mark - Private Interface:
+    -(void)updateTheCountDisplayed;     // Method that updates the display labels.
+
 @end
 
 #pragma mark - Public Interface Implementation:
@@ -21,8 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _theCount = [[Count alloc] init];
-    _theCountDisplayed.text = [NSString stringWithFormat:@"%lu",(long)[_theCount returnTheCount]];
+    _TheItem = [[CountItem alloc] init];
+    _itemCountLabel.text = [NSString stringWithFormat:@"%lu",(long)[_TheItem returnItemCount]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,7 +43,7 @@
     if (motion == UIEventSubtypeMotionShake)
     {
         // User has shaken the device. Reset the count to zero.
-        [_theCount resetTheCountToZero]; // TODO: Abstract this to be -(void)restCountToValue:(NSUInteger)value for multiple uses.
+        [_TheItem resetItemCountToZero]; // TODO: Abstract this to be -(void)restCountToValue:(NSUInteger)value for multiple uses.
         [self updateTheCountDisplayed];
         
     }
@@ -46,17 +51,17 @@
 
 
 #pragma mark - My UI Button Actions:
-/* Action from button that increases the count. */
-- (IBAction)tapToIncrementTheCount:(id)sender
+/* Action from button that increases the item's count. */
+- (IBAction)tapToIncrementItemCount:(id)sender
 {
-    [_theCount incrementTheCountByOne];
+    [_TheItem incrementItemCountByOne];
     [self updateTheCountDisplayed];
 }
 
-/* Action from button that decreases the count. */
-- (IBAction)tapToDecrementTheCount:(id)sender
+/* Action from button that decreases the item's count. */
+- (IBAction)tapToDecrementItemCount:(id)sender
 {
-    [_theCount decrementTheCountByOne];
+    [_TheItem decrementItemCountByOne];
     [self updateTheCountDisplayed];
 
 }
@@ -65,8 +70,8 @@
 /* Private method that updates the count & displays the updated value to label. */
 -(void)updateTheCountDisplayed
 {
-    NSUInteger updatedCount = [_theCount returnTheCount];
-    _theCountDisplayed.text = [NSString stringWithFormat:@"%lu",(long)updatedCount];
+    NSUInteger updatedCount = [_TheItem returnItemCount];
+    _itemCountLabel.text = [NSString stringWithFormat:@"%lu",(long)updatedCount];
 }
 
 @end

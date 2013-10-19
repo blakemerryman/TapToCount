@@ -35,7 +35,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapToIncrementTheCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HP1-bR-UgX"/>
+                                    <action selector="tapToIncrementItemCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9kC-nz-4HA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2g-vz-xUP">
@@ -49,14 +49,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapToDecrementTheCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cpj-yd-YYI"/>
+                                    <action selector="tapToDecrementItemCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="S6W-4G-3O2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="theCountDisplayed" destination="EjO-hC-lNg" id="PJG-4t-5uc"/>
+                        <outlet property="itemCountLabel" destination="EjO-hC-lNg" id="Tda-Lt-FtL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
