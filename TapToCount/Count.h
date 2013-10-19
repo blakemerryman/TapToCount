@@ -16,4 +16,5 @@
 -(NSUInteger)returnTheCount;    // Returns the value of the count.
 -(void)incrementTheCountByOne;  // Increases the count by one.
 -(void)decrementTheCountByOne;  // Decreases the count by one.
+-(void)resetTheCountToZero;     // Resets the count to zero.
 @end

@@ -31,6 +31,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Motion-Handling Methods
+// Shake to Reset Count
+-(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        // User has shaken the device. Reset the count to zero.
+        [_theCount resetTheCountToZero]; // TODO: Abstract this to be -(void)restCountToValue:(NSUInteger)value for multiple uses.
+        [self updateTheCountDisplayed];
+    }
+}
+
+
 #pragma mark - My Actions:
 /* Action from button that increases the count. */
 - (IBAction)tapToIncrementTheCount:(id)sender

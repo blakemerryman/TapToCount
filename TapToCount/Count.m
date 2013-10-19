@@ -43,4 +43,9 @@
     }
 }
 
+-(void)resetTheCountToZero
+{
+    _theCount = 0;
+}
+
 @end
