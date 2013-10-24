@@ -57,13 +57,13 @@
 }
 
 #pragma mark - Other Methods:
-/* This method ensures that the masterCountItemList array remains mutables. */
-- (void)setMasterCountItemList:(NSMutableArray *)newList
-{
-    if (self.masterCountItemList != newList)
-    {
-        self.masterCountItemList = [newList mutableCopy];
-    }
-}
+///* This method ensures that the masterCountItemList array remains mutables. */
+//- (void)setMasterCountItemList:(NSMutableArray *)newList
+//{
+//    if (self.masterCountItemList != newList)
+//    {
+//        self.masterCountItemList = [newList mutableCopy];
+//    }
+//}
 
 @end

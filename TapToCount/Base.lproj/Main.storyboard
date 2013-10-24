@@ -91,7 +91,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CountItemCell" textLabel="dlr-zI-rq4" detailTextLabel="WJY-om-0Od" style="IBUITableViewCellStyleValue1" id="Xot-0Q-n8b">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xot-0Q-n8b" id="jD9-4p-v18">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -124,7 +124,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Items to Count" id="37t-NA-4fB"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="push" id="yKC-HO-wnx"/>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="ShowCountItemDetail" id="yKC-HO-wnx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWc-6z-5Kx" sceneMemberID="firstResponder"/>

@@ -12,8 +12,9 @@
 @interface CountItemDetailViewController : UITableViewController
 
 #pragma mark - ViewController Properties:
-@property (strong, nonatomic) IBOutlet UILabel *itemCountLabel;         // Label displays item's count.
-@property (strong, nonatomic) IBOutlet UINavigationItem *navigationBar; // Navigation bar.
+@property(strong,nonatomic) CountItem* countItem;                     // VC's instance of CountItem object.
+@property(strong,nonatomic) IBOutlet UILabel *itemCountLabel;         // Label displays item's count.
+@property(strong,nonatomic) IBOutlet UINavigationItem *navigationBar; // Navigation bar.
 
 #pragma mark - ViewController Public Interface:
 - (IBAction)tapToIncrementItemCount:(id)sender;  // Action from button that increases item's count.

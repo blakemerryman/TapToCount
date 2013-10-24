@@ -13,7 +13,7 @@
 @interface CountItemDetailViewController ()
 
 #pragma mark - Private Properties:
-@property CountItem* TheItem;       // CountItem used privately within this object.
+@property CountItem* theItem;       // CountItem used privately within this object.
 
 #pragma mark - Private Interface:
 -(void)updateView;     // Method that updates the display labels.
@@ -26,15 +26,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.TheItem = [[CountItem alloc] init];
-    self.navigationBar.title = [self.TheItem itemName];
-    self.itemCountLabel.text = [NSString stringWithFormat:@"%lu",(long)[self.TheItem itemCount]];
+    self.theItem = [[CountItem alloc] init];
+    self.navigationBar.title = [self.theItem itemName];
+    self.itemCountLabel.text = [NSString stringWithFormat:@"%lu",(long)[self.theItem itemCount]];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) setCountItem:(CountItem*)newItem
+{
+    if (self.theItem != newItem)
+    {
+        self.theItem = newItem;
+        [self updateView];
+    }
 }
 
 #pragma mark - Motion Event Methods:
@@ -44,7 +53,7 @@
     if (motion == UIEventSubtypeMotionShake)
     {
         // User has shaken the device. Reset the count to zero.
-        [self.TheItem resetItemCountToZero]; // TODO: Abstract this to be -(void)restCountToValue:(NSUInteger)value for multiple uses.
+        [self.theItem resetItemCountToZero]; // TODO: Abstract this to be -(void)restCountToValue:(NSUInteger)value for multiple uses.
         [self updateView];
         
     }
@@ -54,14 +63,14 @@
 /* Action from button that increases the item's count. */
 - (IBAction)tapToIncrementItemCount:(id)sender
 {
-    [self.TheItem incrementItemCountByOne];
+    [self.theItem incrementItemCountByOne];
     [self updateView];
 }
 
 /* Action from button that decreases the item's count. */
 - (IBAction)tapToDecrementItemCount:(id)sender
 {
-    [self.TheItem decrementItemCountByOne];
+    [self.theItem decrementItemCountByOne];
     [self updateView];
 
 }
@@ -70,8 +79,11 @@
 /* Private method that updates the count & displays the updated value to label. */
 -(void)updateView
 {
-    NSUInteger updatedCount = [self.TheItem itemCount];
-    self.itemCountLabel.text = [NSString stringWithFormat:@"%lu",(long)updatedCount];
+    // Sets the nav bar's title to the item name.
+    self.navigationBar.title = [self.theItem itemName];
+    
+    // Sets the label's text to the item count. Converts item count to string value before display.
+    self.itemCountLabel.text = [NSString stringWithFormat:@"%lu",(long)[self.theItem itemCount]];
 }
 
 @end

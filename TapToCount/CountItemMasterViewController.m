@@ -7,6 +7,7 @@
 //
 
 #import "CountItemMasterViewController.h"
+#import "CountItemDetailViewController.h"
 #import "CountItemDataController.h"
 #import "CountItem.h"
 
@@ -118,16 +119,14 @@
 
 
 #pragma mark - Navigation
-/*
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"])
+    if ([[segue identifier] isEqualToString:@"ShowCountItemDetail"])
     {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        CountItemDetailViewController* detailViewController =[segue destinationViewController];
+        detailViewController.countItem = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
     }
 }
-*/
+
 @end
