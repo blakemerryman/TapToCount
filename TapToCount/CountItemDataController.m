@@ -58,7 +58,7 @@
 
 #pragma mark - Other Methods:
 /* This method ensures that the masterCountItemList array remains mutables. */
-- (void)setMasterBirdSightingList:(NSMutableArray *)newList
+- (void)setMasterCountItemList:(NSMutableArray *)newList
 {
     if (self.masterCountItemList != newList)
     {
