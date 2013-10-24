@@ -18,7 +18,6 @@
 -(id)init;                              // Default initializer.
 -(id)initWithCount:(NSUInteger)count    // Custom initializer.
            AndName:(NSString*)name;
--(NSUInteger)returnItemCount;           // Returns value of itemCount.
 -(void)incrementItemCountByOne;         // Increases itemCount by one.
 -(void)decrementItemCountByOne;         // Decreases itemCount by one.
 -(void)resetItemCountToZero;            // Resets itemCount to zero.

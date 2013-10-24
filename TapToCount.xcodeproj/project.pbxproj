@@ -14,7 +14,7 @@
 		4656FB751809019500A077FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4656FB741809019500A077FD /* main.m */; };
 		4656FB791809019500A077FD /* TapToCountAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4656FB781809019500A077FD /* TapToCountAppDelegate.m */; };
 		4656FB7C1809019500A077FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4656FB7A1809019500A077FD /* Main.storyboard */; };
-		4656FB7F1809019500A077FD /* TapToCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4656FB7E1809019500A077FD /* TapToCountViewController.m */; };
+		4656FB7F1809019500A077FD /* CountItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4656FB7E1809019500A077FD /* CountItemDetailViewController.m */; };
 		4656FB811809019500A077FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4656FB801809019500A077FD /* Images.xcassets */; };
 		4656FB881809019500A077FD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4656FB871809019500A077FD /* XCTest.framework */; };
 		4656FB891809019500A077FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4656FB681809019400A077FD /* Foundation.framework */; };
@@ -23,6 +23,7 @@
 		4656FB941809019500A077FD /* TapToCountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4656FB931809019500A077FD /* TapToCountTests.m */; };
 		4656FB9F180902AC00A077FD /* CountItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4656FB9E180902AC00A077FD /* CountItem.m */; };
 		46FF0D0C1818DE64009F5A30 /* CountItemDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF0D0B1818DE64009F5A30 /* CountItemDataController.m */; };
+		46FF0D0F1818E7AB009F5A30 /* CountItemMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF0D0E1818E7AB009F5A30 /* CountItemMasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +48,8 @@
 		4656FB771809019500A077FD /* TapToCountAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapToCountAppDelegate.h; sourceTree = "<group>"; };
 		4656FB781809019500A077FD /* TapToCountAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapToCountAppDelegate.m; sourceTree = "<group>"; };
 		4656FB7B1809019500A077FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4656FB7D1809019500A077FD /* TapToCountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapToCountViewController.h; sourceTree = "<group>"; };
-		4656FB7E1809019500A077FD /* TapToCountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapToCountViewController.m; sourceTree = "<group>"; };
+		4656FB7D1809019500A077FD /* CountItemDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountItemDetailViewController.h; sourceTree = "<group>"; };
+		4656FB7E1809019500A077FD /* CountItemDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountItemDetailViewController.m; sourceTree = "<group>"; };
 		4656FB801809019500A077FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4656FB861809019500A077FD /* TapToCountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapToCountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4656FB871809019500A077FD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,6 +60,8 @@
 		4656FB9E180902AC00A077FD /* CountItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountItem.m; sourceTree = "<group>"; };
 		46FF0D0A1818DE64009F5A30 /* CountItemDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountItemDataController.h; sourceTree = "<group>"; };
 		46FF0D0B1818DE64009F5A30 /* CountItemDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountItemDataController.m; sourceTree = "<group>"; };
+		46FF0D0D1818E7AB009F5A30 /* CountItemMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountItemMasterViewController.h; sourceTree = "<group>"; };
+		46FF0D0E1818E7AB009F5A30 /* CountItemMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountItemMasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +122,10 @@
 			isa = PBXGroup;
 			children = (
 				4656FB7A1809019500A077FD /* Main.storyboard */,
-				4656FB7D1809019500A077FD /* TapToCountViewController.h */,
-				4656FB7E1809019500A077FD /* TapToCountViewController.m */,
+				46FF0D0D1818E7AB009F5A30 /* CountItemMasterViewController.h */,
+				46FF0D0E1818E7AB009F5A30 /* CountItemMasterViewController.m */,
+				4656FB7D1809019500A077FD /* CountItemDetailViewController.h */,
+				4656FB7E1809019500A077FD /* CountItemDetailViewController.m */,
 				46FF0D0A1818DE64009F5A30 /* CountItemDataController.h */,
 				46FF0D0B1818DE64009F5A30 /* CountItemDataController.m */,
 				4656FB9D180902AC00A077FD /* CountItem.h */,
@@ -266,8 +271,9 @@
 				46FF0D0C1818DE64009F5A30 /* CountItemDataController.m in Sources */,
 				4656FB751809019500A077FD /* main.m in Sources */,
 				4656FB791809019500A077FD /* TapToCountAppDelegate.m in Sources */,
-				4656FB7F1809019500A077FD /* TapToCountViewController.m in Sources */,
+				4656FB7F1809019500A077FD /* CountItemDetailViewController.m in Sources */,
 				4656FB9F180902AC00A077FD /* CountItem.m in Sources */,
+				46FF0D0F1818E7AB009F5A30 /* CountItemMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

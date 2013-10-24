@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CountItem;
 
-@interface TapToCountViewController : UIViewController
+@interface CountItemDetailViewController : UITableViewController
 
 #pragma mark - ViewController Properties:
-@property (strong, nonatomic) IBOutlet UILabel *itemCountLabel;  // Label displays item's count.
+@property (strong, nonatomic) IBOutlet UILabel *itemCountLabel;         // Label displays item's count.
+@property (strong, nonatomic) IBOutlet UINavigationItem *navigationBar; // Navigation bar.
 
 #pragma mark - ViewController Public Interface:
 - (IBAction)tapToIncrementItemCount:(id)sender;  // Action from button that increases item's count.
