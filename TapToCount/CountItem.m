@@ -16,8 +16,8 @@
 {
     self = [super init];
     if (self) {
-        _itemCount = 0;
-        _itemName = @"Item";
+        self.itemCount = 0;
+        self.itemName = @"Item";
     }
     return self;
 }
@@ -29,8 +29,8 @@
     
     if (self)
     {
-        _itemCount = count;
-        _itemName = name;
+        self.itemCount = count;
+        self.itemName = name;
         return self;
     }
     return nil;
@@ -39,28 +39,28 @@
 /* Returns the count value. */
 -(NSUInteger)returnItemCount
 {
-    return _itemCount;
+    return self.itemCount;
 }
 
 /* Increases the count value by one. */
 -(void)incrementItemCountByOne
 {
-    _itemCount += 1;
+    self.itemCount += 1;
 }
 
 /* Decreases the count value by one. */
 -(void)decrementItemCountByOne
 {
     // Ensures the count will never drop below zero.
-    if (_itemCount > 0)
+    if (self.itemCount > 0)
     {
-        _itemCount -= 1;
+        self.itemCount -= 1;
     }
 }
 
 -(void)resetItemCountToZero
 {
-    _itemCount = 0;
+    self.itemCount = 0;
 }
 
 @end
