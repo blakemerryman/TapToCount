@@ -11,13 +11,16 @@
 @interface CountItem : NSObject
 
 #pragma mark - Object Properties:
-@property NSUInteger itemCount; // Holds the count.
+@property NSUInteger itemCount;         // The item's count.
+@property NSString* itemName;           // The items' name.
 
 #pragma mark - Public Interface:
--(id)init;                      // Default initializer.
--(NSUInteger)returnItemCount;   // Returns value of itemCount.
--(void)incrementItemCountByOne; // Increases itemCount by one.
--(void)decrementItemCountByOne; // Decreases itemCount by one.
--(void)resetItemCountToZero;    // Resets itemCount to zero.
+-(id)init;                              // Default initializer.
+-(id)initWithCount:(NSUInteger)count    // Custom initializer.
+           AndName:(NSString*)name;
+-(NSUInteger)returnItemCount;           // Returns value of itemCount.
+-(void)incrementItemCountByOne;         // Increases itemCount by one.
+-(void)decrementItemCountByOne;         // Decreases itemCount by one.
+-(void)resetItemCountToZero;            // Resets itemCount to zero.
 
 @end

@@ -22,6 +22,7 @@
 		4656FB921809019500A077FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4656FB901809019500A077FD /* InfoPlist.strings */; };
 		4656FB941809019500A077FD /* TapToCountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4656FB931809019500A077FD /* TapToCountTests.m */; };
 		4656FB9F180902AC00A077FD /* CountItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4656FB9E180902AC00A077FD /* CountItem.m */; };
+		46FF0D0C1818DE64009F5A30 /* CountItemDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF0D0B1818DE64009F5A30 /* CountItemDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		4656FB931809019500A077FD /* TapToCountTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapToCountTests.m; sourceTree = "<group>"; };
 		4656FB9D180902AC00A077FD /* CountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountItem.h; sourceTree = "<group>"; };
 		4656FB9E180902AC00A077FD /* CountItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountItem.m; sourceTree = "<group>"; };
+		46FF0D0A1818DE64009F5A30 /* CountItemDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountItemDataController.h; sourceTree = "<group>"; };
+		46FF0D0B1818DE64009F5A30 /* CountItemDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountItemDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				4656FB7A1809019500A077FD /* Main.storyboard */,
 				4656FB7D1809019500A077FD /* TapToCountViewController.h */,
 				4656FB7E1809019500A077FD /* TapToCountViewController.m */,
+				46FF0D0A1818DE64009F5A30 /* CountItemDataController.h */,
+				46FF0D0B1818DE64009F5A30 /* CountItemDataController.m */,
 				4656FB9D180902AC00A077FD /* CountItem.h */,
 				4656FB9E180902AC00A077FD /* CountItem.m */,
 				4656FB6F1809019500A077FD /* Supporting Files */,
@@ -258,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FF0D0C1818DE64009F5A30 /* CountItemDataController.m in Sources */,
 				4656FB751809019500A077FD /* main.m in Sources */,
 				4656FB791809019500A077FD /* TapToCountAppDelegate.m in Sources */,
 				4656FB7F1809019500A077FD /* TapToCountViewController.m in Sources */,

@@ -11,14 +11,29 @@
 #pragma mark - Public Interface Implementation:
 @implementation CountItem
 
-/* Default initializer. Sets count value to 0. */
+/* Default initializer that sets count value to 0 and name to "Item". */
 -(id) init
 {
     self = [super init];
     if (self) {
         _itemCount = 0;
+        _itemName = @"Item";
     }
     return self;
+}
+
+/* Custom Initializer that sets count & name */
+-(id)initWithCount:(NSUInteger)count AndName:(NSString*)name
+{
+    self = [super init];
+    
+    if (self)
+    {
+        _itemCount = count;
+        _itemName = name;
+        return self;
+    }
+    return nil;
 }
 
 /* Returns the count value. */
